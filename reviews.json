@@ -1,0 +1,92 @@
+[
+  {
+    "id": "rev-001",
+    "businessId": "mama-thandi-kitchen",
+    "userName": "Anele M.",
+    "rating": 5,
+    "comment": "The Saturday braai plate is worth the queue. Portions are generous and it's always fresh.",
+    "status": "approved",
+    "date": "2026-03-01"
+  },
+  {
+    "id": "rev-002",
+    "businessId": "mama-thandi-kitchen",
+    "userName": "Buhle S.",
+    "rating": 4,
+    "comment": "Great food, gets very busy on weekends so call ahead if you want to collect quickly.",
+    "status": "approved",
+    "date": "2026-04-11"
+  },
+  {
+    "id": "rev-003",
+    "businessId": "khaya-cuts-barbershop",
+    "userName": "Sipho N.",
+    "rating": 5,
+    "comment": "Been going for two years, never had a bad fade. Book ahead on Fridays.",
+    "status": "approved",
+    "date": "2026-01-20"
+  },
+  {
+    "id": "rev-004",
+    "businessId": "reliable-flow-plumbing",
+    "userName": "Priya G.",
+    "rating": 5,
+    "comment": "Came out at 11pm for a burst pipe and had it sorted within the hour. Fair price too.",
+    "status": "approved",
+    "date": "2025-12-19"
+  },
+  {
+    "id": "rev-005",
+    "businessId": "bright-spark-electrical",
+    "userName": "Johan V.",
+    "rating": 4,
+    "comment": "Professional and the COC was issued the same week. A little pricier than others but worth it.",
+    "status": "approved",
+    "date": "2026-02-02"
+  },
+  {
+    "id": "rev-006",
+    "businessId": "ubuntu-learning-hub",
+    "userName": "Nokuthula D.",
+    "rating": 5,
+    "comment": "My son's maths mark went from 42% to 68% in one term. The small groups really help.",
+    "status": "approved",
+    "date": "2026-05-14"
+  },
+  {
+    "id": "rev-007",
+    "businessId": "moments-by-lerato",
+    "userName": "Kagiso T.",
+    "rating": 5,
+    "comment": "Lerato made my daughter's matric dance photos feel effortless. Gallery arrived in 5 days.",
+    "status": "approved",
+    "date": "2025-11-30"
+  },
+  {
+    "id": "rev-008",
+    "businessId": "sparkle-home-cleaning",
+    "userName": "Michelle P.",
+    "rating": 4,
+    "comment": "Reliable weekly service and it's nice knowing the cleaners set their own rates fairly.",
+    "status": "approved",
+    "date": "2026-01-08"
+  },
+  {
+    "id": "rev-009",
+    "businessId": "glow-beauty-bar",
+    "userName": "Amahle Z.",
+    "rating": 3,
+    "comment": "Lovely nails but I waited 25 minutes past my appointment time on a Saturday.",
+    "status": "pending",
+    "date": "2026-06-02"
+  },
+  {
+    "id": "rev-010",
+    "businessId": "nomvula-designs",
+    "userName": "Thabo K.",
+    "rating": 5,
+    "comment": "Made my wedding umembeso outfit exactly to measure. Highly recommend booking early.",
+    "status": "approved",
+    "date": "2025-09-25"
+  }
+]

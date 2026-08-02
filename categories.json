@@ -1,0 +1,10 @@
+[
+  { "id": "restaurants", "name": "Restaurants & Food", "description": "Kitchens, cafés and caterers serving the neighbourhood." },
+  { "id": "beauty", "name": "Beauty & Grooming", "description": "Hair, nails, skincare and grooming studios." },
+  { "id": "plumbing", "name": "Plumbing", "description": "Leak repairs, installations and emergency call-outs." },
+  { "id": "electrical", "name": "Electrical", "description": "Wiring, compliance certificates and electrical repairs." },
+  { "id": "tutors", "name": "Tutors & Education", "description": "Private tutors and after-school learning support." },
+  { "id": "photography", "name": "Photography", "description": "Portrait, event and product photographers." },
+  { "id": "cleaning", "name": "Cleaning Services", "description": "Home, office and once-off deep cleaning." },
+  { "id": "clothing", "name": "Clothing & Tailoring", "description": "Fashion boutiques, tailors and alterations." }
+]

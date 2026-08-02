@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #FAF6EF;
+  color: #1B2430;
+}
+
+/* Visible keyboard focus everywhere, including custom components */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid #C4592C;
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Signature element: the hand-stamped "open now" plaque used on business
+   cards and detail pages. A subtle rotation gives it a stamped-by-hand feel
+   without tipping into decoration for its own sake. */
+.stamp {
+  transform: rotate(-3deg);
+}
+
+.stamp-verified {
+  transform: rotate(2deg);
+}
+
+/* Hairline dividers styled like a market notice board */
+.pin-divider {
+  border-top: 1px dashed #DDD3C0;
+}
