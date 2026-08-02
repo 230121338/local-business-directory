@@ -154,4 +154,4 @@ export default function BusinessDetailPage({ params }) {
       </div>
     </article>
   );
-}
+    }
