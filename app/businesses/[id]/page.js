@@ -22,7 +22,7 @@ export function generateMetadata({ params }) {
   const business = getBusinessById(params.id);
   if (!business) return {};
   return {
-    title: `${business.name} — LocalLink`,
+    title: business.name + " — LocalLink",
     description: business.shortDescription
   };
 }
@@ -38,6 +38,10 @@ export default function BusinessDetailPage({ params }) {
   const rating = getAverageRating(business.id);
   const reviews = getApprovedReviewsForBusiness(business.id);
   const hours = getOrderedHours(business.hours);
+  const photoAlt = "Photo representing " + business.name;
+  const telHref = "tel:" + formatPhoneForTel(business.phone);
+  const mailHref = "mailto:" + business.email;
+  const whatsappMessage = "Hi " + business.name + ", I found you on LocalLink.";
 
   return (
     <article className="max-w-5xl mx-auto px-4 sm:px-6 py-10">
@@ -50,7 +54,7 @@ export default function BusinessDetailPage({ params }) {
           <div className="relative h-64 sm:h-80 w-full rounded-stall overflow-hidden border-2 border-ink">
             <Image
               src={business.image}
-              alt={`Photo representing ${business.name}`}
+              alt={photoAlt}
               fill
               sizes="(max-width: 1024px) 100vw, 60vw"
               className="object-cover"
@@ -106,7 +110,7 @@ export default function BusinessDetailPage({ params }) {
             </h2>
 
             
-              href={`tel:${formatPhoneForTel(business.phone)}`}
+              href={telHref}
               className="block w-full text-center px-4 py-2.5 bg-ink text-paper rounded-stall font-medium hover:bg-clay transition-colors"
             >
               Call {business.phone}
@@ -114,10 +118,7 @@ export default function BusinessDetailPage({ params }) {
 
             {business.whatsapp && (
               
-                href={formatWhatsAppLink(
-                  business.whatsapp,
-                  `Hi ${business.name}, I found you on LocalLink.`
-                )}
+                href={formatWhatsAppLink(business.whatsapp, whatsappMessage)}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block w-full text-center px-4 py-2.5 border-2 border-teal text-teal rounded-stall font-medium hover:bg-teal hover:text-paper transition-colors"
@@ -127,7 +128,7 @@ export default function BusinessDetailPage({ params }) {
             )}
 
             
-              href={`mailto:${business.email}`}
+              href={mailHref}
               className="block w-full text-center px-4 py-2.5 border-2 border-ink/20 rounded-stall font-medium hover:border-ink transition-colors"
             >
               Email business
@@ -154,4 +155,4 @@ export default function BusinessDetailPage({ params }) {
       </div>
     </article>
   );
-    }
+}
